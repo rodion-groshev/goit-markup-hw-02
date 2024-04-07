@@ -17,6 +17,9 @@ body {
     letter-spacing: 2%;
 }
 
+ul {
+    list-style: none;
+}
 
 
 .page-header .logo-header {
@@ -56,9 +59,13 @@ body {
     font-style: normal;    
 }
 
+.page-header .address-link:active {
+    color: var(--nav-active);
+}
+
 .page-header .address-link:hover,
 .page-header .address-link:focus {
-    color: var(--nav-active)F;
+    color: var(--nav-active);
 }
 
 .main-section {
@@ -73,6 +80,7 @@ body {
 }
 
 .page-button {
+    font-family: inherit;
     background-color: var(--logo-web);
     font-weight: 500;
     color: var(--white);
@@ -80,8 +88,8 @@ body {
     cursor: pointer;
 }
 
-.page-button:hover
- {
+.page-button:hover,
+.page-button:focus {
     background-color: var(--nav-active);
 }
 
@@ -107,11 +115,16 @@ body {
     font-size: 36px;
 }
 
+.team-list {
+    background-color: var(--white);
+}
+
 .team-section .team-name {
     font-weight: 500;
     font-size: 20px;
     color: var(--main-color);
 }
+
 
 .page-footer {
     background: var(--main-color);
@@ -128,8 +141,27 @@ body {
     letter-spacing: 3%;
 }
 
+.products-link {
+    text-decoration: none;
+    color: inherit;
+}
 .products-title {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 20px;    
 }
 
+.page-filter {
+    font-family: inherit;
+    background-color: var(--cloud-color);
+    font-weight: 500;
+    color: var(--nav-active);
+    letter-spacing: 4%;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.page-filter:hover,
+.page-filter:focus {
+    background-color: var(--nav-active);
+    color: var(--white);
+}
